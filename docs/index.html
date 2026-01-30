@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Nano template</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>Gemini Nano template</h1>
+        <div id="status" class="status">Checking...</div>
+      </header>
+      <main id="chat-messages" class="chat-messages">
+        <button id="init-model" class="init-button" style="display: none;">Initialize the model</button>
+      </main>
+      <form id="chat-form" class="chat-form">
+        <textarea
+          id="message-input"
+          class="message-input"
+          placeholder="Enter your message..."
+          autocomplete="off"
+          rows="3"
+          disabled
+        ></textarea>
+        <button
+          type="submit"
+          id="submit-button"
+          class="submit-button"
+          disabled
+        >Submit</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
